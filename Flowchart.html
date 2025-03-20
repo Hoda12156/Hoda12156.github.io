@@ -1,0 +1,103 @@
+<div id="rettangolo" class="rettangolo">Start</div>
+<div id="rettangolo" class="rettangolo1">Marrone</div>
+<div id="rettangolo" class="rettangolo2">Bianco</div>
+<div id="linea" class="linea"></div>
+<div id="linea" class="linea2"></div>
+<div id="linea" class="linea3"></div>
+<div class="rombo">
+	<span>Condizione</span>
+</div>
+<div id="linea-orizzontale" class="lineaorizzontale"></div>
+<div id="linea-orizzontale" class="lineaorizzontale2"></div>
+<div id="linea-orizzontale" class="lineaorizzontale3"></div>
+<div id="end">End</div>
+<style>
+	#rettangolo {
+		width: 120px;
+		height: 60px;
+		border: 2px solid black;
+		position: absolute;
+		text-align: center;
+	}
+	
+	#rettangolo {
+		line-height: 58px;
+	}
+	.rettangolo1{
+		top:265px;
+	}
+	.rettangolo2{
+		left:188px;
+		top: 209px;
+	}
+    .rombo {
+        width: 80px;
+        height: 80px;
+        border: 2px solid black;
+        position: absolute;
+        transform: rotate(45deg);
+        text-align: center;
+	    top: 127px;
+	    left: 29px;
+    }
+	
+    .rombo span {
+	    transform: rotate(-45deg);
+	    text-align: center;
+	    display: block;
+	    margin-left: -2px;
+	    margin-top: 27px;
+    }
+	
+	#start {
+		line-height: 58px;
+	}
+    .linea {
+        top: 70px;
+        left: 70px;
+    }
+    #linea {
+	    width: 2px;
+	    height: 40px;
+	    background: black;
+	    position: absolute;
+	}
+	.linea2{
+		top: 225px;
+        left: 70px;
+    }
+	.linea3{
+		top: 169px;
+        left: 249px;
+    }
+	#linea-orizzontale {
+	    width: 1px;
+	    height: 40px;
+	    background: black;
+	    position: absolute;
+	    transform: rotate(90deg);
+	}
+	.lineaorizzontale{
+		top: 149px;
+	    left: 149px;
+	}
+	.lineaorizzontale2{
+		top: 149px;
+	    left: 189px;
+	}
+	.lineaorizzontale3{
+		top: 149px;
+	    left: 229px;
+	}
+    #end {
+		top: 450px;
+		left: 169px;
+		border-radius: 40px;
+		width: 120px;
+		height: 60px;
+		border: 2px solid black;
+		position: absolute;
+		line-height: 57px;
+		text-align: center;
+    }
+</style>
