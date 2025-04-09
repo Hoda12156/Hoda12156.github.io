@@ -1,270 +1,299 @@
-<head>
-    <style>
-    p {
-        color: hsl(0, 86%, 44%);
-        text-align: center;
-    } 
-    </style>
-    </head>
-    <body>
-   
-   <h1 id="capitolo 3"><p>Capitolo 3</p></h1>
-   <h2 style="color: hsl(0, 86%, 44%);"><p><u><i><b>Codifiche</b></i></u></h2></p>
-   <a href="indice.html" id="Z"><p>Indice </a></p>
+<!DOCTYPE html>
+<html lang="en">
 
-    </body>
-<style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /*solo css*/
+    p {
+      color: hsl(0, 86%, 44%);
+      text-align: center;
+    }
+
     body {
       background-color: rgb(176, 221, 236);
     }
-    </style>
-    </head>
-    <body>
-<h2>link interni</h2>
-<a href="#Ascii (TASTIERA)" id="Z">Ascii (TASTIERA)</a>
-<br>
-<a href="#Numeri (INTERI E REALI)" id="Z">Numeri (INTERI E REALI)</a>
-<br>
-<a href="#immagini" id="Z">immagini</a>
-<br>
-<a href="#Audio" id="Z">Audio</a>
-<style>
-    #Z:hover{
-        font-weight: 800;
-        color: hsl(0, 86%, 44%);
+
+    #Z:hover {
+      font-weight: 800;
+      color: hsl(0, 86%, 44%);
     }
-</style>
-<br>
-<h2 id="Ascii (TASTIERA)"><h2 style="color: hsl(0, 86%, 44%);"><u><i><b>Ascii (TASTIERA)</u></i></b></h2>
-<img src="numeri.jpg" style="width:600px;height:450px;">
-<br>
-<br>
-La <b>codifica ASCII </b>(American Standard Code for Information Interchange) è un sistema che rappresenta i caratteri alfanumerici tramite numeri interi. 
-<br>
-Ogni carattere sulla tastiera (come lettere, numeri, punteggiatura e simboli di controllo) è associato a un numero intero, che viene utilizzato dal computer per rappresentarlo.
-<br>
-I valori ASCII vanno da 0 a 127, ma esiste una versione estesa chiamata Extended ASCII che arriva fino a 255.
-<br>
-<br>
-<h2 id="Numeri (INTERI E REALI)"><h2 style="color: hsl(0, 86%, 44%);"><u><i><b>Numeri (INTERI E REALI)</u></i></b></h2>
-<img src="codifiche.jpg">
-<br>
-<br>
-In informatica, i numeri interi e i numeri reali sono rappresentati in formati binari, cioè come sequenze di 0 e 1. 
-<br>
-Ecco come funzionano:
-<ul>
-<li>Numeri interi: Questi possono essere rappresentati in vari formati, tra cui il formato intero signed (con segno) o unsigned (senza segno).</li>
-<br>
-<b>Ad esempio </b> 
-<br>
-un intero di 8 bit può rappresentare valori da -128 a 127 (in formato signed) o da 0 a 255 (in formato unsigned).  
-<br>
-<br>
-<li>Numeri reali: I numeri reali, che includono decimali, sono rappresentati in formato floating-point.
-<br>
-Esistono vari formati, ma uno dei più comuni è il formato IEEE 754, che rappresenta i numeri reali con una mantissa e un esponente.</li>
-<br>
-<b>Ad esempio</b>
-<br>
-Il numero 3.14 in formato floating-point viene scritto come una sequenza binaria in cui la mantissa rappresenta la parte decimale e l'esponente rappresenta la posizione del punto decimale.
-</ul>
-<br>
-<b>Sistemi di Numerazione</b>
-<br>
-I numeri possono essere rappresentati in vari sistemi di numerazione, ognuno con il proprio insieme di regole.
-<br>
-<br>
-<b>Sistema Decimale (Base 10)</b>
-<br>
-Il sistema più usato nella vita quotidiana. 
-<br>
-Ogni cifra assume un valore da 0 a 9 e le posizioni sono potenze di 10
-<br>
-<br>
-<b>Sistema Binario (Base 2)</b>
-<br>
-Utilizzato nei computer perché è facilmente implementabile con circuiti elettronici a due stati (0 e 1).
-<br>
-<br>
-<b>Sistema Ottale (Base 8)</b>
-<br>
-Usa le cifre da 0 a 7. 
-<br>
-Spesso usato nelle rappresentazioni compatte dei numeri binari (ogni cifra ottale corrisponde a tre bit).
-<br>
-<br>
-<b>Sistema Esadecimale (Base 16)</b>
-<br>
-Usa cifre da 0 a 9 e lettere A-F (dove A=10, B=11, ..., F=15). 
-<br>
-È molto usato in informatica per rappresentare indirizzi di memoria e colori.
-<br>
-<br>
-<h3>Codifiche Numeriche nei Computer</h3>
-<br>
-<b>BCD (Binary Coded Decimal)</b>
-<br>
-Ogni cifra decimale viene rappresentata con 4 bit.
-Esempio (numero decimale 45):
-<ul>
-    <li>4 → 0100</li>
-    <li>5 → 0101</li>
-    <li>45 in BCD: 0100 0101</li>
-</ul>
-Vantaggi:
-<br>
-✔ Facile conversione da e verso il sistema decimale
-<br>
-Svantaggi:
-<br>
-✖ Usa più bit rispetto alla rappresentazione binaria pura
-<br>
-<br>
-<b>IEEE 754 (Virgola Mobile)</b>
-<br>
-Usato per rappresentare numeri con la virgola nei computer. Un numero in IEEE 754 è diviso in:
-<ul>
-    <li>Segno (1 bit): 0 per positivo, 1 per negativo</li>
-    <li>Esponente (8 bit): Determina l'ordine di grandezza</li>
-    <li>Mantissa (23 bit): La parte frazionaria del numero</li>
-</ul>
-<b>Esempio:</b> Il numero -5.75 in IEEE 754 (32-bit)
-11000000101110000000000000000000
-<br>
-<br>
-<b>Gray Code</b>
-<br>
-Un codice binario speciale in cui due numeri consecutivi differiscono per un solo bit.
-<br>
-<b>Esempio:</b>
-<br>
-<br>
 
-<html>
-<head>
-<style>
-table, td, th {
-  border: 1px solid black;
-}
+    table,
+    td,
+    th {
+      border: 1px solid black;
+    }
 
-table {
-  border-collapse: collapse;
-  width: 50%;
-}
-tr:hover {background-color: coral;}
-</style>
+    table {
+      border-collapse: collapse;
+      width: 50%;
+    }
+
+    tr:hover {
+      background-color: coral;
+    }
+
+
+    #Alyaa {
+      color: hsl(0, 86%, 44%);
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+
+    #Alyaa:hover {
+      font-weight: 600;
+    }
+  </style>
 </head>
-<body>
-<table>
-  <tr>
-    <th>Decimale</th>
-    <th>Binario</th>
-    <th>Gray Code</th>
-  </tr>
-  <tr>
-    <td>0</td>
-    <td>0000</td>
-    <td>0000</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>0001</td>
-    <td>0001</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>0010</td>
-    <td>0011</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>0011</td>
-    <td>0010</td>
-  </tr>
-</table>
 
+<body>
+  #solo html
+  <h1 id="capitolo 3">
+    <p>Capitolo 3</p>
+  </h1>
+  <h2 style="color: hsl(0, 86%, 44%);">
+    <p><u><i><b>Codifiche</b></i></u>
+  </h2>
+  </p>
+  <a href="indice.html" id="Z">
+    <p>Indice
+  </a></p>
+
+  <h2>link interni</h2>
+  <a href="#Ascii (TASTIERA)" id="Z">Ascii (TASTIERA)</a>
+  <br>
+  <a href="#Numeri (INTERI E REALI)" id="Z">Numeri (INTERI E REALI)</a>
+  <br>
+  <a href="#immagini" id="Z">immagini</a>
+  <br>
+  <a href="#Audio" id="Z">Audio</a>
+
+  <br>
+  <h2 id="Ascii (TASTIERA)">
+    <h2 style="color: hsl(0, 86%, 44%);"><u><i><b>Ascii (TASTIERA)</u></i></b></h2>
+    <img src="numeri.jpg" style="width:600px;height:450px;">
+    <br>
+    <br>
+    La <b>codifica ASCII </b>(American Standard Code for Information Interchange) è un sistema che rappresenta i
+    caratteri alfanumerici tramite numeri interi.
+    <br>
+    Ogni carattere sulla tastiera (come lettere, numeri, punteggiatura e simboli di controllo) è associato a un numero
+    intero, che viene utilizzato dal computer per rappresentarlo.
+    <br>
+    I valori ASCII vanno da 0 a 127, ma esiste una versione estesa chiamata Extended ASCII che arriva fino a 255.
+    <br>
+    <br>
+    <h2 id="Numeri (INTERI E REALI)">
+      <h2 style="color: hsl(0, 86%, 44%);"><u><i><b>Numeri (INTERI E REALI)</u></i></b></h2>
+      <img src="codifiche.jpg">
+      <br>
+      <br>
+      In informatica, i numeri interi e i numeri reali sono rappresentati in formati binari, cioè come sequenze di 0 e
+      1.
+      <br>
+      Ecco come funzionano:
+      <ul>
+        <li>Numeri interi: Questi possono essere rappresentati in vari formati, tra cui il formato intero signed (con
+          segno) o unsigned (senza segno).</li>
+        <br>
+        <b>Ad esempio </b>
+        <br>
+        un intero di 8 bit può rappresentare valori da -128 a 127 (in formato signed) o da 0 a 255 (in formato
+        unsigned).
+        <br>
+        <br>
+        <li>Numeri reali: I numeri reali, che includono decimali, sono rappresentati in formato floating-point.
+          <br>
+          Esistono vari formati, ma uno dei più comuni è il formato IEEE 754, che rappresenta i numeri reali con una
+          mantissa e un esponente.
+        </li>
+        <br>
+        <b>Ad esempio</b>
+        <br>
+        Il numero 3.14 in formato floating-point viene scritto come una sequenza binaria in cui la mantissa rappresenta
+        la parte decimale e l'esponente rappresenta la posizione del punto decimale.
+      </ul>
+      <br>
+      <b>Sistemi di Numerazione</b>
+      <br>
+      I numeri possono essere rappresentati in vari sistemi di numerazione, ognuno con il proprio insieme di regole.
+      <br>
+      <br>
+      <b>Sistema Decimale (Base 10)</b>
+      <br>
+      Il sistema più usato nella vita quotidiana.
+      <br>
+      Ogni cifra assume un valore da 0 a 9 e le posizioni sono potenze di 10
+      <br>
+      <br>
+      <b>Sistema Binario (Base 2)</b>
+      <br>
+      Utilizzato nei computer perché è facilmente implementabile con circuiti elettronici a due stati (0 e 1).
+      <br>
+      <br>
+      <b>Sistema Ottale (Base 8)</b>
+      <br>
+      Usa le cifre da 0 a 7.
+      <br>
+      Spesso usato nelle rappresentazioni compatte dei numeri binari (ogni cifra ottale corrisponde a tre bit).
+      <br>
+      <br>
+      <b>Sistema Esadecimale (Base 16)</b>
+      <br>
+      Usa cifre da 0 a 9 e lettere A-F (dove A=10, B=11, ..., F=15).
+      <br>
+      È molto usato in informatica per rappresentare indirizzi di memoria e colori.
+      <br>
+      <br>
+      <h3>Codifiche Numeriche nei Computer</h3>
+      <br>
+      <b>BCD (Binary Coded Decimal)</b>
+      <br>
+      Ogni cifra decimale viene rappresentata con 4 bit.
+      Esempio (numero decimale 45):
+      <ul>
+        <li>4 → 0100</li>
+        <li>5 → 0101</li>
+        <li>45 in BCD: 0100 0101</li>
+      </ul>
+      Vantaggi:
+      <br>
+      ✔ Facile conversione da e verso il sistema decimale
+      <br>
+      Svantaggi:
+      <br>
+      ✖ Usa più bit rispetto alla rappresentazione binaria pura
+      <br>
+      <br>
+      <b>IEEE 754 (Virgola Mobile)</b>
+      <br>
+      Usato per rappresentare numeri con la virgola nei computer. Un numero in IEEE 754 è diviso in:
+      <ul>
+        <li>Segno (1 bit): 0 per positivo, 1 per negativo</li>
+        <li>Esponente (8 bit): Determina l'ordine di grandezza</li>
+        <li>Mantissa (23 bit): La parte frazionaria del numero</li>
+      </ul>
+      <b>Esempio:</b> Il numero -5.75 in IEEE 754 (32-bit)
+      11000000101110000000000000000000
+      <br>
+      <br>
+      <b>Gray Code</b>
+      <br>
+      Un codice binario speciale in cui due numeri consecutivi differiscono per un solo bit.
+      <br>
+      <b>Esempio:</b>
+      <br>
+      <br>
+      <table>
+        <tr>
+          <th>Decimale</th>
+          <th>Binario</th>
+          <th>Gray Code</th>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>0000</td>
+          <td>0000</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0001</td>
+          <td>0001</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>0010</td>
+          <td>0011</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>0011</td>
+          <td>0010</td>
+        </tr>
+      </table>
+
+      <br>
+      Vantaggi:
+      <br>
+      ✔ Evita errori nei sistemi digitali quando i numeri cambiano rapidamente
+      <br>
+      <h2 id="immagini">
+        <h2 style="color: hsl(0, 86%, 44%);"><u><i><b>immagini</u></i></b></h2>
+        <img src="codifiche immagini.jpg" style="width:600px;height:450px;">
+        <br>
+        <br>
+        Codificare un'immagine significa rappresentarla in forma digitale, cioè trasformarla in numeri binari (0 e 1)
+        che possono essere memorizzati, modificati o trasmessi da un computer.
+        <br>
+        Un'immagine digitale non è altro che una griglia di pixel, e ogni pixel ha un colore codificato in modo
+        numerico.
+        <br>
+        <br>
+        <b>Ci sono deversi tipi di codifiche di un'immagine:</b>
+        <br>
+        <br>
+        <b><i>1. 🎨 Codifica RGB (colori)</i></b>
+        <br>
+        Ogni pixel è rappresentato da 3 valori:
+        <ul>
+          <li>R = Red (rosso)</li>
+          <li>G = Green (verde)</li>
+          <li>B = Blue (blu)</li>
+        </ul>
+        <b>Esempio:</b>
+        <br>
+        <br>
+        (255, 0, 0) → rosso puro
+        <br>
+        (0, 255, 0) → verde puro
+        <br>
+        (0, 0, 0) → nero
+        <br>
+        (255, 255, 255) → bianco
+        <br>
+        <br>
+        Ogni canale ha un valore tra 0 e 255 → quindi 1 pixel = 3 byte (24 bit)
+        <br>
+        <br>
+        <b><i>2. 🌑 Scala di grigi</i></b>
+        <br>
+        Un solo valore per pixel (tra 0 e 255):
+        <br>
+        <ul>
+          <li>0 = nero</li>
+          <li>255 = bianco</li>
+        </ul>
+        Quindi un’immagine in scala di grigi occupa meno spazio di una a colori.
+        <br>
+        <br>
+        <h2 id="Audio">
+          <h2 style="color: hsl(0, 86%, 44%);"><u><i><b>Audio</u></i></b></h2>
+          <img src="audio.jpg">
+          <br>
+          <br>
+          L'audio digitale è rappresentato come una sequenza di valori numerici che descrivono l'ampiezza del suono in
+          un dato momento. Questo processo è noto come campionamento.
+          <br>
+          La qualità dell'audio dipende da:
+          <ul>
+            <li><b>Frequenza di campionamento:</b>Misura quante volte al secondo l'audio viene campionato. Ad esempio,
+              44.1 kHz è la frequenza standard per CD audio.</li>
+            <li><b>Profondità di bit:</b> Determina la precisione con cui viene rappresentato il livello dell'audio. Una
+              profondità di bit di 16 bit è tipica per i CD audio.</li>
+          </ul>
+          <b>Formati audio comuni:</b>
+          <ul>
+            <li><b>MP3:</b>Compressione con perdita, ampiamente usato per musica.</li>
+            <li><b>WAV:</b>Senza compressione, alta qualità ma file grandi.</li>
+            <li><b>FLAC:</b>Compressione senza perdita di qualità, popolare tra gli audiofili.</li>
+          </ul>
+          <br>
+          <a href="#capitolo3" id="Alyaa">torna all'inizio</a>
 </body>
+
 </html>
-<br>
-Vantaggi:
-<br>
-✔ Evita errori nei sistemi digitali quando i numeri cambiano rapidamente
-<br>
-<h2 id="immagini"><h2 style="color: hsl(0, 86%, 44%);"><u><i><b>immagini</u></i></b></h2>
-<img src="codifiche immagini.jpg" style="width:600px;height:450px;">
-<br>
-<br>
-Codificare un'immagine significa rappresentarla in forma digitale, cioè trasformarla in numeri binari (0 e 1) che possono essere memorizzati, modificati o trasmessi da un computer.
-<br>
-Un'immagine digitale non è altro che una griglia di pixel, e ogni pixel ha un colore codificato in modo numerico.
-<br>
-<br>
-<b>Ci sono deversi tipi di codifiche di un'immagine:</b>
-<br> 
-<br>
-<b><i>1. 🎨 Codifica RGB (colori)</i></b>
-<br>
-Ogni pixel è rappresentato da 3 valori:
-<ul>
- <li>R = Red (rosso)</li>
- <li>G = Green (verde)</li>
- <li>B = Blue (blu)</li>
-</ul>
-<b>Esempio:</b>
-<br>
-<br>
-(255, 0, 0) → rosso puro
-<br>
-(0, 255, 0) → verde puro
-<br>
-(0, 0, 0)   → nero
-<br>
-(255, 255, 255) → bianco
-<br>
-<br>
-Ogni canale ha un valore tra 0 e 255 → quindi 1 pixel = 3 byte (24 bit)
-<br>
-<br>
-<b><i>2. 🌑 Scala di grigi</i></b>
-<br>
-Un solo valore per pixel (tra 0 e 255):
-<br>
-<ul>
-  <li>0 = nero</li>
-  <li>255 = bianco</li>
-</ul>
-Quindi un’immagine in scala di grigi occupa meno spazio di una a colori.
-<br>
-<br>
-<h2 id="Audio"><h2 style="color: hsl(0, 86%, 44%);"><u><i><b>Audio</u></i></b></h2>
-<img src="audio.jpg">
-<br>
-<br>
-L'audio digitale è rappresentato come una sequenza di valori numerici che descrivono l'ampiezza del suono in un dato momento. Questo processo è noto come campionamento. 
-<br>
-La qualità dell'audio dipende da:
-<ul>
-<li><b>Frequenza di campionamento:</b>Misura quante volte al secondo l'audio viene campionato. Ad esempio, 44.1 kHz è la frequenza standard per CD audio.</li>
-<li><b>Profondità di bit:</b> Determina la precisione con cui viene rappresentato il livello dell'audio. Una profondità di bit di 16 bit è tipica per i CD audio.</li>
-</ul>
-<b>Formati audio comuni:</b>
-<ul>
-<li><b>MP3:</b>Compressione con perdita, ampiamente usato per musica.</li>
-<li><b>WAV:</b>Senza compressione, alta qualità ma file grandi.</li>
-<li><b>FLAC:</b>Compressione senza perdita di qualità, popolare tra gli audiofili.</li>
-</ul>
-<br>
-<a href="#capitolo3" id="Alyaa">torna all'inizio</a>
-<style>
-    #Alyaa{
-        color: hsl(0, 86%, 44%);
-        position: fixed;
-        top: 10px;
-        right: 10px;
-    }
-    #Alyaa:hover{
-        font-weight: 600;
-    }
-</style>
-</body>
