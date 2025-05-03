@@ -23,9 +23,13 @@ p {
 </body>
 
 <h2>Link interni</h2>
-<a href="#Gli algoritmi" id="V">Gli algoritmi</a>
+<a href="#Glialgoritmi" id="V">Gli algoritmi</a>
 <br>
-<a href="#La programmazione" id="V">La programmazione</a>
+<a href="#Modellazione Algoritmi" id="V">Modellazione Algoritmi</a>
+<br>
+<a href="#problema al programma" id="V">problema al programma</a>
+<br>
+<a href="#Laprogrammazione" id="V">La programmazione</a>
 <style>
     #V:hover{
         font-weight: 800;
@@ -33,12 +37,14 @@ p {
     }
 </style>
 <br>
-<h2 id="Gli algoritmi"><h2 style="color: hsl(0, 86%, 44%);"><u><i><b>Gli algoritmi</u></i></b></h2>    
+<h2 id="Glialgoritmi"><h2 style="color: hsl(0, 86%, 44%);"><u><i><b>Gli algoritmi</u></i></b></h2>    
 <br>          
-<img src="algoritmo.jpg">
+<img src="algoritmo.jpg" style="width:500px;height:300px;">
 <br>
 <br>
-Un algoritmo è una sequenza finita e ordinata di istruzioni che permette di risolvere un problema o eseguire un compito specifico. 
+<b><i>Cos'è un algoritmo?</i></b>
+<br>
+Un algoritmo è una sequenza finita di istruzioni precise, non ambigue e ordinate che permette di risolvere un problema o svolgere un compito, partendo da dati iniziali per arrivare a un risultato.
 <br>
 Gli algoritmi sono utilizzati in diversi ambiti, dalla matematica all’informatica, e rappresentano la base del funzionamento dei programmi software. 
 <br>
@@ -48,9 +54,106 @@ Può essere espresso in vari modi, come tramite diagrammi di flusso, pseudocodic
 <br>
 Gli algoritmi vengono classificati in base alla loro complessità e al loro approccio risolutivo, come ad esempio algoritmi ricorsivi, greedy o di ricerca.
 <br>
-<h2 id="La programmazione"><h2 style="color: hsl(0, 86%, 44%);"><u><i><b>La programmazione</u></i></b></h2>
+In altre parole:
 <br>
-<img src="programmazione.jpg" style="width:800px;height:400px;">
+Un algoritmo è una ricetta per raggiungere un obiettivo.
+<br>
+<br>
+<b><i>Caratteristiche fondamentali di un algoritmo:</i></b>
+<br>
+Finitudine: deve terminare dopo un numero finito di passi.
+<br>
+Non ambiguità: ogni istruzione deve essere chiara e interpretabile in un solo modo.
+<br>
+Input: riceve uno o più dati iniziali.
+<br>
+Output: produce uno o più risultati finali.
+<br>
+Efficacia: ogni operazione deve essere semplice abbastanza da poter essere eseguita.
+<br>
+<br>
+<b><i>Esempio semplice di algoritmo:</i></b>
+<br>
+<u>Problema: Trovare il massimo tra due numeri.</u>
+<br>
+Algoritmo:
+<br>
+1) Leggi i due numeri A e B.
+<br>
+2) Se A > B, allora il massimo è A.
+<br>
+3) Altrimenti il massimo è B.
+<br>
+4) Scrivi il massimo.
+<br>
+<br>
+<b><i>Modi per rappresentare un algoritmo:</i></b>
+<br>
+In linguaggio naturale (come sopra)
+<br>
+Pseudocodice (più simile a un linguaggio di programmazione)
+<br>    
+Diagramma di flusso (grafico)
+<br>    
+Codice vero e proprio in un linguaggio (Python, C, ecc.)
+<h2 id="Modellazione Algoritmi"><h2 style="color: hsl(0, 86%, 44%);"><b><u><i>Modellazione Algoritmi</i></u></b></h2>
+<b><i>Cos'è la modellazione degli algoritmi?</i></b>
+<br>
+Modellare un algoritmo significa descrivere in modo formale e organizzato come si vuole risolvere un problema, prima di passare alla scrittura del codice vero e proprio.
+<br>
+Serve a chiarire i passaggi logici e a capire bene cosa deve essere fatto e in che ordine.
+<br>
+<br>
+<b>Esempio pratico di modellazione</b>
+<br>
+<u>Problema: Calcolare la somma dei primi N numeri naturali.</u>
+<br>
+<b>Modellazione:</b>
+<br>
+Input: un numero intero N.
+<br>
+Output: la somma dei numeri da 1 a N.
+<br>
+<b>Scomposizione:</b>
+<br>
+Inizializza una variabile somma = 0.
+<br>
+Per ogni numero da 1 a N, aggiungilo a somma.
+<br>
+<b>Pseudocodice:</b>
+<br>
+Leggi N
+<br>
+somma ← 0
+<br>
+Per i da 1 a N
+<br>
+somma ← somma + i
+<br>
+Scrivi somma
+<br>
+<br>
+<b><i>Perché modellare un algoritmo?</i></b>
+<br>
+Per evitare errori logici.
+<br>
+Per risparmiare tempo quando si scrive il codice.
+<br>    
+Per comunicare meglio le idee ad altri programmatori.
+<br>    
+Per ottimizzare la soluzione (fare algoritmi più veloci o più semplici).
+<h2 id="problema al programma"><h2 style="color: hsl(0, 86%, 44%);"><u><b><i>problema al programma</i></b></u></h2>
+<b><i>Dal problema al programma: il percorso completo</i></b>
+<br>
+In informatica, trasformare un problema in un programma significa passare attraverso una serie di fasi logiche che portano dalla comprensione del problema fino alla scrittura del codice eseguibile.
+<br>
+Ecco i passaggi fondamentali:
+<br>
+Problema ➡️ Analisi ➡️ Algoritmo ➡️ Codice ➡️ Test
+
+<h2 id="Laprogrammazione"><h2 style="color: hsl(0, 86%, 44%);"><u><i><b>La programmazione</u></i></b></h2>
+<br>
+<img src="programmazione.jpg" style="width:500px;height:300px;">
 <br>
 <br>
 La programmazione è il processo di scrittura, sviluppo e manutenzione di codice sorgente per creare software, applicazioni o sistemi informatici.
@@ -62,10 +165,55 @@ La programmazione si basa su concetti fondamentali come variabili, strutture di 
 Una buona programmazione richiede logica, creatività e attenzione all’efficienza del codice per garantire prestazioni ottimali e facilità di manutenzione.
 
 <a href="#capitolo 4" id="Hoda">torna all'inizio</a>
+<a href="capitolo1.html" id="D">capitolo 1 </a>
+<a href="capitolo2.html" id="CR7">capitolo 2 </a>
+<a href="capitolo3.html" id="MN">capitolo 3 </a>
+
 <style>
     #Hoda{
-        color: hsl(0, 19%, 85%);
+        color: hsl(0, 86%, 44%);
         position: fixed;
         top: 10px;
         right: 10px;
     }
+    #Hoda:hover{
+        font-weight: 600;
+    }
+
+    #D{
+        color: hsl(0, 86%, 44%);
+        position: fixed;
+        top: 30px;
+        right: 20px;
+    }
+    #D:hover{
+        font-weight: 600;
+    }
+
+    #CR7{
+        color: hsl(0, 86%, 44%);
+        position: fixed;
+        top: 50px;
+        right: 20px;
+    }
+    #CR7:hover{
+        font-weight: 600;
+    }
+
+    #MN{
+        color: hsl(0, 86%, 44%);
+        position: fixed;
+        top: 70px;
+        right: 20px;
+    }
+    #MN:hover{
+        font-weight: 600;
+    }
+</style>
+
+
+
+
+
+
+

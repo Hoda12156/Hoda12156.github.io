@@ -15,7 +15,7 @@ p {
 </head>
 <body>
            
-<h1 id="capitolo 2"><p>Capitolo 2</p></h1>
+<h1 id="capitolo2"><p>Capitolo 2</p></h1>
 <h2 style="color: hsl(0, 86%, 44%);"><p><u><i><b> COMPONENTI DEL COMPUTER </u></i></b></h2></p>
 <a href="indice.html" id="X"><p>Indice </a></p>
         
@@ -29,18 +29,22 @@ p {
 <li><a href="#Periferiche" id="X">Periferiche</a></li>
 </ul>
 <a href="#software" id="X">software</a>
+<ul>
+    <li><a href="#Firmware" id="X">Firmware</a></li>
+    <li><a href="#Sistemi operativi" id="X">Sistemi operativi</a></li>
+    <li><a href="#Applicazioni" id="X">Applicazioni</a></li>   
+</ul>
 <style>
     #X:hover{
     font-weight: 800;
     color: hsl(0, 86%, 44%);
     }
 </style>
-<br>
-<br>
+
 <h2 id="Hardware"><h2 style="color: hsl(0, 86%, 44%);"><u><i><b>Hardware</u></i></b></h2>
 <br>
-<img src="hardware.jpg">
-<img src="foto1.jpg">
+<img src="hardware.jpg" style="width: 500px;height: 300px;">
+<img src="foto1.jpg" style="width: 500px;height: 300;">
 <br>
 <br>
 <b><i>Hardware: la parte fisica del computer</i></b>
@@ -52,39 +56,240 @@ L’hardware è tutto ciò che si può toccare in un computer.
 <br>
 È diverso dal software, che è la parte “invisibile” (i programmi).
 <br>
+L’hardware è il corpo del computer, fatto di schede, cavi e periferiche.
+<br>
+La scheda madre è il cuore del sistema: collega tutto e permette il funzionamento.
+<br>
+Senza hardware, il software non può fare nulla.
+<br>
 L’hardware comprende: schede, cavi, periferiche, processori, memorie… tutto ciò che serve per far funzionare il sistema.
 <br>
 <h3 id="Schede"><h3 style="color: hsl(0, 86%, 44%);"><u><i><b>Schede</u></i></b></h3>
+<img src="hardware2.jpg" style="width: 400px;height:200px;">
+<br>
+<br>
 Nel computer ci sono alcune schede elettroniche molto importanti.
 <br>
 Le schede servono per controllare e gestire le varie funzioni del computer: immagini, suoni, rete, memoria… 
 <br>
 Sono tutte collegate alla scheda madre, che fa da base.
-<h2 id="software"><h2 style="color: hsl(0, 86%, 44%);"><u><i><b>sofetware</u></i></b></h2>
-<br>
-<img src="vita.jpg">
 <br>
 <br>
-Il software è la parte intelligente del computer, la parte logica che fa funzionare il computer.
+<b><i>1) Scheda Madre (la più importante)</i></b>
 <br>
-Per software si intende la serie di istruzioni o programmi che indicano a un computer cosa fare.
+È la base di tutto il computer.
 <br>
-È indipendente dall'hardware e rende programmabili i computer. 
+Tutti i componenti principali (CPU, RAM, scheda video, dischi, porte USB…) sono collegati direttamente alla scheda madre.
 <br>
-<b>Esistono fondamentalmente tre tipi di software:</b>
-<br>
-<b>Software di sistema:</b> fornisce le funzioni principali come sistemi operativi, gestione del disco, utility, gestione dell'hardware e altre necessità operative.
-<br>
-<b>Software di programmazione:</b> fornisce ai programmatori strumenti come editor di testo, compilatori, linker, debugger e altri strumenti per la creazione di codice.
+Ha dei circuiti elettronici che permettono ai vari componenti di parlarsi tra loro.
 <br>
 <br>
-<b>Software applicativo (applicazioni o app):</b>
+<b>Contiene:</b>
+<br>
+Socket: dove si inserisce la CPU (il “cervello” del computer).
+<br>
+Slot RAM: per le memorie.
+<br>
+Slot PCIe: per aggiungere schede (video, audio, rete…).
+<br>
+Chipset: gestisce le comunicazioni interne.
+<br>
+Porte: USB, HDMI, Ethernet, ecc.
+<br>
+<br>
+Senza scheda madre, le altre parti del computer non possono comunicare, quindi non funziona nulla.
+<br>
+<br>
+<b><i>2) Scheda Video (o Scheda Grafica) </i></b>
+<br>
+Gestisce tutto ciò che riguarda le immagini.
+<br>
+Mostra il desktop, i giochi, i video sul monitor.
+<br>
+Alcuni computer hanno una scheda video interna alla scheda madre.
+<br>
+I computer per giocare o lavorare con la grafica usano schede video dedicate (più potenti).
+<br>
+Le marche più famose sono NVIDIA e AMD.
+<br>
+<br>
+<b><i>3)  Scheda Audio </i></b>
+<br>
+Gestisce i suoni del computer.
+<br>
+Permette di sentire l’audio con le casse o le cuffie.
+<br>
+Permette anche di registrare suoni con un microfono.
+<br>
+Oggi è quasi sempre integrata nella scheda madre.
+<br>
+<br>
+<b><i>4)  Scheda di Rete </i></b>
+<br>
+Serve per collegarsi a internet o a una rete locale (LAN).
+<br>
+Può essere via cavo (Ethernet) o senza fili (Wi-Fi).
+<br>
+Anche questa scheda è spesso integrata nella scheda madre.
+<br>
+<br>
+<b><i>5) Schede di espansione</i></b>
+<br>
+Sono schede aggiuntive che si possono inserire nella scheda madre per aggiungere funzioni.
+<br>
+<b>Esempi:</b>
+<br>
+Scheda TV (per vedere la TV sul PC)
+<br>
+Scheda di acquisizione video (per registrare da videocamere o console)
+<br>
+Scheda USB aggiuntiva (per avere più porte USB)
+<br>
+<h3 id="Cavi"><h3 style="color: hsl(0, 86%, 44%);"><u><i><b>Cavi</u></i></b></h3>
+I cavi servono per:
+Alimentare (cioè portare corrente elettrica) al computer.
+<br>
+Trasmettere dati tra le varie parti.
+<br>
+<b><i>Tipi di cavi:</i></b>
 <ul>
-<li>consente agli utenti di eseguire attività.</li>
-<li>Ne sono esempi le suite di produttività per ufficio, i software di gestione dei dati, i lettori multimediali e i programmi di sicurezza.</li> 
-<li>Il termine applicazioni si riferisce anche alle applicazioni per il web e per i dispositivi mobili, come quelle che si usano per fare acquisti su Amazon.com, socializzare con Facebook o pubblicare foto su Instagram.</li>
+<li>Cavo di alimentazione: collega il computer alla presa di corrente.</li>
+<li>Cavi SATA: collegano hard disk e SSD alla scheda madre.</li>
+<li>Cavi USB: servono per collegare mouse, tastiere, stampanti, chiavette.</li>
+<li>Cavi HDMI/VGA/DisplayPort: collegano il computer al monitor.</li>
+<li>Cavo Ethernet: collega il PC al modem/router per andare su internet.</li>
 </ul>
-<a href="#capitolo 2" id="Hoda">torna all'inizio</a>
+<h3 id="Periferiche"><h3 style="color: hsl(0, 86%, 44%);"><u><i><b>Periferiche</u></i></b></h3>
+Le periferiche sono i dispositivi collegati al computer per comunicare con lui.
+<br>
+Le periferiche sono gli oggetti che si collegano al computer per inserire dati, ricevere dati, o fare entrambe le cose.
+<br>
+<br>
+<b><i> Periferiche di Input (inseriscono dati nel PC):</i></b>
+<br>
+Tastiera → scriviamo testi, comandi.</li>
+<br>
+Mouse → spostiamo il cursore, clicchiamo.</li>
+<br>
+Microfono → inviamo suoni al computer.</li>
+<br>
+Scanner → trasforma un foglio cartaceo in un file digitale.</li>
+<br>
+Webcam → manda immagini/video al computer.</li>
+<br>
+<br>
+<b><i> Periferiche di Output (ricevono dati dal PC):</i></b>
+<br>
+Monitor → mostra ciò che succede nel computer.
+<br>
+Stampante → stampa documenti su carta.
+<br>
+Casse → emettono suoni e musica.
+<br>
+<br>
+<b><i>Periferiche di Input/Output (fanno entrambe le cose):</i></b>
+<br>
+Touch screen → schermo che possiamo toccare (input) e vedere (output).
+<br>
+Chiavetta USB → riceve e invia dati al PC.
+<br>
+Stampante multifunzione → stampa (output), scansiona (input) e copia.
+<br>
+Hard disk esterni → possono essere usati per salvare o leggere file.
+<br>
+<h2 id="Software"><h2 style="color: hsl(0, 86%, 44%);"><u><i><b>software</u></i></b></h2>
+<br>
+<img src="vita.jpg" style="width: 500px;height: 300px;">
+<br>
+<br>
+Il software è l’insieme di istruzioni e dati che permettono a un computer o a un qualsiasi dispositivo elettronico di funzionare.
+<br>
+A differenza dell’hardware (la parte fisica, come tastiera, CPU, monitor), il software è la parte invisibile: i programmi, le applicazioni, i sistemi operativi.
+<br>
+Il software dice all’hardware cosa fare.
+<br>
+Senza software, un computer è solo un pezzo di metallo, plastica e circuiti.
+<br>
+Il software viene creato da sviluppatori (o programmatori), che scrivono codice usando <b><i>linguaggi di programmazione come:</i></b>
+<ul>
+<li>Python</li>
+<li>C++</li>
+<li>Java</li>
+<li>JavaScript</li>
+</ul>
+Questi linguaggi permettono di istruire il computer a svolgere compiti ben precisi.
+<br>
+<br>
+<b><i>Tipi principali di Software</i></b>
+<h3 id="Firmware"><h3 style="color: hsl(0, 86%, 44%);"><u><i><b>Firmware</u></i></b></h3>
+È un tipo di software di basso livello incorporato direttamente in un hardware.
+<br>
+Si trova in microchip o memorie flash all’interno dei dispositivi.
+<br>
+Controlla le funzionalità base dell'hardware e permette la comunicazione tra hardware e software.
+<br>
+Non viene quasi mai modificato dall’utente.
+<br>
+<br>
+<b><i>Esempi:</i></b>
+<br>
+Il firmware del BIOS/UEFI nel PC: avvia il computer prima che il sistema operativo parta.
+<br>
+Il firmware di una stampante che gestisce il movimento delle testine.
+<br>
+<h3 id="Sistemi operativi"><h3 style="color: hsl(0, 86%, 44%);"><u><i><b>Sistemi operativi</b></i></u></h3>
+È il software fondamentale che fa da intermediario tra l’hardware e gli altri software.
+<br>
+Gestisce risorse come memoria, processore, file e dispositivi.
+<br>
+Fornisce un’interfaccia utente per controllare il computer (ad es. desktop, finestre, pulsanti).
+<br>
+<br>
+<b><i>Esempi comuni:</i></b>
+<br>
+Windows (Microsoft)
+<br>
+macOS (Apple)
+<br>
+Linux (open source)
+<br>
+Android (Google)
+<br>
+iOS (Apple, per iPhone)
+<br>
+<br>
+<b><i>Funzioni principali del sistema operativo:</i></b>
+<br>
+Avviare e spegnere il dispositivo.
+<br>
+Avviare le applicazioni.
+<br>
+Gestire la sicurezza e gli utenti.
+<br>
+Controllare le periferiche (stampanti, mouse, ecc.).
+<h3 id="Applicazioni"><h3 style="color: hsl(0, 86%, 44%);"><u><b><i>Applicazioni</i></b></u></h3>
+Sono i programmi che permettono all’utente finale di fare qualcosa di specifico.
+<br>
+Aiutano l’utente a scrivere documenti, navigare, modificare foto.
+<br>
+Si basano sul sistema operativo per funzionare.
+<br>
+<br>
+<b><i>Esempi:</i></b>
+<br>
+Microsoft Word (videoscrittura)
+<br>
+Google Chrome (navigazione web)
+<br>
+Adobe Photoshop (fotoritocco)
+<br>
+Spotify (ascolto musicale)
+<br>
+<a href="#capitolo2" id="Hoda">torna all'inizio</a>
+<a href="capitolo1.html" id="D">capitolo 1 </a>
+<a href="capitolo3.html" id="MN">capitolo 3 </a>
+<a href="capitolo4.html" id="K">capitolo 4 </a>
+
 <style>
     #Hoda{
         color: hsl(0, 86%, 44%);
@@ -95,9 +300,7 @@ Per software si intende la serie di istruzioni o programmi che indicano a un com
     #Hoda:hover{
         font-weight: 600;
     }
-</style>
-<a href="capitolo1.html" id="D">capitolo 1 </a>
-<style>
+
     #D{
         color: hsl(0, 86%, 44%);
         position: fixed;
@@ -107,10 +310,7 @@ Per software si intende la serie di istruzioni o programmi che indicano a un com
     #D:hover{
         font-weight: 600;
     }
-</style>
-<br>
-<a href="capitolo3.html" id="MN">capitolo 3 </a>
-<style>
+
     #MN{
         color: hsl(0, 86%, 44%);
         position: fixed;
@@ -120,10 +320,7 @@ Per software si intende la serie di istruzioni o programmi che indicano a un com
     #MN:hover{
         font-weight: 600;
     }
-</style>
 
-<a href="capitolo4.html" id="K">capitolo 4 </a>
-<style>
     #K{
         color: hsl(0, 86%, 44%);
         position: fixed;
